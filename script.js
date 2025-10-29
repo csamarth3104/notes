@@ -28,7 +28,8 @@ createNotes.addEventListener("click", () => {
 
 
 
-    container.appendChild(newp).appendChild(imge);
+    container.appendChild(newp);
+    newp.appendChild(imge);
     // updateStorage();
 })
 container.addEventListener("click", (e) => {
@@ -48,7 +49,7 @@ container.addEventListener("click", (e) => {
 
     }
     if(
-        (inputbox.innertext)===""
+        (inputbox.innerText)===""
     ){
         inputbox.parentElement.remove();
     }
@@ -62,4 +63,5 @@ container.addEventListener("click", (e) => {
     })
 
     // updateStorage();
+
 });
